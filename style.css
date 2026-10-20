@@ -1,0 +1,240 @@
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #263238;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h2 {
+    color: #087f8c;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 18px 7%;
+    background-color: #087f8c;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #b8f2e6;
+}
+
+/* HERO SECTION */
+#home {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+}
+
+#home h1 {
+    color: #087f8c;
+    font-size: clamp(32px, 5vw, 52px);
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+}
+
+/* BUTTONS */
+.hero-button,
+button {
+    display: inline-block;
+    background-color: #087f8c;
+    color: white;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover,
+button:hover {
+    background-color: #05616b;
+}
+
+/* SERVICE CARDS */
+#services {
+    background-color: #f5fbfc;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #087f8c;
+}
+
+/* ABOUT SECTION */
+#about {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* CONTACT SECTION */
+#contact {
+    background-color: #eaf8f9;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+/* FORM FIELDS */
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5d8;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #087f8c;
+    border-color: #087f8c;
+}
+
+#contact form button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* WHATSAPP BUTTON */
+#contact a[href*="wa.me"] {
+    display: inline-block;
+    margin: 15px auto;
+    background-color: #168b55;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a[href*="wa.me"]:hover {
+    background-color: #106b40;
+}
+
+/* FOOTER */
+footer {
+    background-color: #173b40;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    #home {
+        padding: 70px 20px;
+    }
+
+    section {
+        padding: 45px 16px;
+    }
+
+    #contact form {
+        padding: 20px;
+    }
+}
